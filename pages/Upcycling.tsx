@@ -6,7 +6,7 @@ import { RefreshCw, Heart, Scissors } from 'lucide-react';
 export const Upcycling: React.FC = () => {
   return (
     <div className="fade-in pt-10">
-       <section className="px-6 mb-20 text-center max-w-4xl mx-auto">
+       <section className="px-6 text-center max-w-4xl mx-auto pt-28 md:pt-32 mb-20">
         <h4 className="text-brand-gold uppercase tracking-widest text-xs font-bold mb-4">Sostenibilità Creativa</h4>
         <h1 className="font-serif text-5xl md:text-7xl text-brand-dark mb-8">Upcycling</h1>
         <p className="text-lg text-gray-600 leading-relaxed">

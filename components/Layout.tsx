@@ -184,6 +184,9 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
         </div>
         
         <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-gray-100 text-center text-xs text-gray-400">
+          <p className="mb-4 text-gray-400 uppercase">
+            SweetyLab è un progetto d'impresa cofinanziato dal fondo sociale Europero Plus (FSE+) 2021-2027 Avviso "Impresa Formativia" della Regione Lazio
+          </p>
           <img src="/images/LogoRegione.png" alt="Logo Regione" className="mx-auto h-12 mb-4 object-contain" />
           <p>&copy; {new Date().getFullYear()} Sweety Lab. Tutti i diritti riservati.</p>
         </div>

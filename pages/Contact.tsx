@@ -16,7 +16,8 @@ export const Contact: React.FC = () => {
 
   return (
     <div className="fade-in pt-10">
-      <section className="px-6 mb-12 text-center">
+      <section className="px-6 text-center pt-28 md:pt-32 mb-12">
+         <h4 className="text-brand-gold uppercase tracking-widest text-xs font-bold mb-4">Vieni a Trovarci</h4>
         <h1 className="font-serif text-5xl text-brand-dark mb-4">Contattaci</h1>
         <p className="text-gray-600">Prenota un appuntamento o richiedi informazioni sulle collezioni.</p>
       </section>

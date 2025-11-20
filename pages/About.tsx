@@ -6,7 +6,7 @@ export const About: React.FC = () => {
   return (
     <div className="fade-in pt-10">
       {/* Hero About */}
-      <section className="px-6 mb-20">
+      <section className="px-6 pt-28 md:pt-32 mb-20">
         <div className="max-w-7xl mx-auto text-center">
           <h4 className="text-brand-gold uppercase tracking-widest text-xs font-bold mb-4">Chi Siamo</h4>
           <h1 className="font-serif text-5xl md:text-7xl text-brand-dark mb-8">
