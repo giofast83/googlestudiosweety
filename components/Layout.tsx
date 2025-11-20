@@ -44,15 +44,18 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
       <header 
         className={`fixed top-0 w-full z-50 transition-all duration-500 py-4 ${
           isTransparent 
-            ? 'bg-transparent text-white shadow-none' 
-            : 'bg-brand-cream/90 backdrop-blur-md shadow-sm text-brand-dark'
+            ? 'bg-transparent text-white shadow-none opacity-0 -translate-y-12 pointer-events-none' 
+            : 'bg-brand-cream/90 backdrop-blur-md shadow-sm text-brand-dark opacity-100 translate-y-0 pointer-events-auto'
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
           <Link to="/" className="z-50 pointer-events-auto">
-            <h1 className="font-serif text-2xl tracking-widest font-bold uppercase text-inherit transition-colors">
-              {BRAND_NAME}
-            </h1>
+            <img 
+              src="/images/sweety-lab-logo.png" 
+              alt="Sweety Lab Logo" 
+              className="h-12 md:h-16 w-auto object-contain filter brightness-0"
+              loading="eager"
+            />
           </Link>
 
           {/* Desktop Nav */}
@@ -110,7 +113,12 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
       <footer className="bg-white border-t border-brand-sage/30 pt-16 pb-8 px-6">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
           <div className="col-span-1 md:col-span-1">
-            <h3 className="font-serif text-xl mb-6">{BRAND_NAME}</h3>
+            <img 
+              src="/images/sweety-lab-logo.png" 
+              alt="Sweety Lab Logo" 
+              className="h-16 w-auto object-contain mb-6 filter brightness-0"
+              loading="lazy"
+            />
             <p className="text-sm text-gray-600 leading-relaxed mb-6">
               Moda artigianale Made in Italy. <br/>
               Creazioni uniche, sostenibili e su misura per valorizzare la tua unicità.
@@ -159,6 +167,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
         </div>
         
         <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-gray-100 text-center text-xs text-gray-400">
+          <img src="/images/LogoRegione.png" alt="Logo Regione" className="mx-auto h-12 mb-4 object-contain" />
           <p>&copy; {new Date().getFullYear()} Sweety Lab. Tutti i diritti riservati.</p>
         </div>
       </footer>

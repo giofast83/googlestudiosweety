@@ -19,6 +19,8 @@ export const Home: React.FC = () => {
         </div>
         
         <div className="relative z-10 text-center max-w-4xl px-6 text-white pb-24 md:pb-32 pt-24 md:pt-32">
+          <img src="/images/sweety-lab-logo.png" alt="Sweety Lab" className="mx-auto h-20 md:h-28 mb-6 filter invert drop-shadow-md" />
+          <p className="text-sm md:text-base tracking-[0.2em] uppercase mb-6 font-light drop-shadow-md">Est. 2023 — Made in Italy · Atelier indipendente di sartoria</p>
           <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl mb-8 leading-tight drop-shadow-lg">
             Moda artigianale,<br/>
             <span className="italic font-light">sostenibile</span> e su misura.
