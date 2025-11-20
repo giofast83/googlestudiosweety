@@ -8,10 +8,10 @@ export const Collections: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   return (
-    <div className="fade-in">
+    <div className="fade-in pt-10">
       <div className="bg-brand-cream px-6 text-center pt-28 md:pt-32 pb-20">
         <h4 className="text-brand-gold uppercase tracking-widest text-xs font-bold mb-4">Lasciati Ispirare</h4>
-        <h1 className="font-serif text-5xl md:text-6xl text-brand-dark mb-4">Le Collezioni</h1>
+        <h1 className="font-serif text-5xl md:text-6xl text-brand-dark mb-8">Le Collezioni</h1>
         <p className="text-gray-600 max-w-2xl mx-auto font-light">
           Un viaggio attraverso tessuti pregiati, tagli innovativi e ispirazioni stagionali. Ogni collezione racconta una nuova storia di femminilità.
         </p>
