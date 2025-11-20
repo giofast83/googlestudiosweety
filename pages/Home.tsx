@@ -19,7 +19,6 @@ export const Home: React.FC = () => {
         </div>
         
         <div className="relative z-10 text-center max-w-4xl px-6 text-white pb-24 md:pb-32 pt-24 md:pt-32">
-          <p className="text-sm md:text-base tracking-[0.3em] uppercase mb-6 font-light drop-shadow-md">Est. 2023 — Made in Italy</p>
           <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl mb-8 leading-tight drop-shadow-lg">
             Moda artigianale,<br/>
             <span className="italic font-light">sostenibile</span> e su misura.
@@ -31,14 +30,16 @@ export const Home: React.FC = () => {
             <Link to="/collezioni">
               <Button variant="white">Scopri le Collezioni</Button>
             </Link>
-            <Link to="/su-misura">
-              <Button 
-                variant="outline" 
-                className="text-white border-white hover:bg-brand-powder !hover:text-black hover:border-brand-powder"
-              >
-                Richiedi su Misura
-              </Button>
-            </Link>
+          <Link to="/su-misura">
+            <Button 
+              variant="outline" 
+              className="text-white border-white hover:bg-brand-powder !hover:text-black hover:border-brand-powder"
+              onMouseEnter={(e) => { (e.currentTarget as HTMLButtonElement).style.color = 'black'; }}
+              onMouseLeave={(e) => { (e.currentTarget as HTMLButtonElement).style.color = ''; }}
+            >
+              Richiedi su Misura
+            </Button>
+          </Link>
           </div>
         </div>
       </section>

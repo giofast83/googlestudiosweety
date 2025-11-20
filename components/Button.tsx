@@ -14,11 +14,12 @@ export const Button: React.FC<ButtonProps> = ({
   ...props 
 }) => {
   const baseStyles = "py-3 px-8 transition-all duration-300 text-sm tracking-widest uppercase font-semibold font-sans";
+  const hasHoverTextOverride = /(^|\s)!?hover:text-[^\s]+(\s|$)/.test(className);
   
   const variants = {
     primary: "bg-brand-dark text-white hover:bg-gray-700 border border-transparent",
     secondary: "bg-brand-powder text-brand-dark hover:bg-rose-200 border border-transparent",
-    outline: "bg-transparent text-brand-dark border border-brand-dark hover:bg-brand-dark hover:text-white",
+    outline: `bg-transparent text-brand-dark border border-brand-dark hover:bg-brand-dark${hasHoverTextOverride ? '' : ' hover:text-white'}`,
     white: "bg-white text-brand-dark border border-white hover:bg-brand-cream hover:border-brand-cream"
   };
 
