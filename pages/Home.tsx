@@ -10,7 +10,7 @@ export const Home: React.FC = () => {
       <section className="relative h-screen w-full overflow-hidden flex items-center justify-center">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?q=80&w=1920&auto=format&fit=crop" 
+            src="/images/Hero1.png" 
             alt="Abito sartoriale Sweety Lab" 
             className="w-full h-full object-cover"
           />
