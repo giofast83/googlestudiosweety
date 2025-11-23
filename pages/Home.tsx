@@ -12,7 +12,7 @@ export const Home: React.FC = () => {
           <img 
             src="/images/Hero1.png" 
             alt="Abito sartoriale Sweety Lab" 
-            className="w-full h-full object-cover object-[100%_15%]"
+            className="w-full h-full object-cover object-[100%_2%]"
           />
           {/* Increased overlay opacity for better text contrast */}
           <div className="absolute inset-0 bg-black/40"></div>
