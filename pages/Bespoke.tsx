@@ -72,8 +72,8 @@ export const Bespoke: React.FC = () => {
               </div>
             </div>
             <div className="grid grid-cols-2 gap-4">
-               <img src="https://picsum.photos/seed/bespoke1/400/600" alt="Prova abito" className="w-full h-auto object-cover mt-12" />
-               <img src="https://picsum.photos/seed/bespoke2/400/600" alt="Dettaglio tessuto" className="w-full h-auto object-cover" />
+               <img src="/images/DettaglioBottoni.JPG" alt="Prova abito" className="w-full h-auto object-cover mt-12" />
+               <img src="/images/Aggiustamenti Eleonora.JPG" alt="Dettaglio tessuto" className="w-full h-auto object-cover" />
             </div>
           </div>
         </div>
@@ -87,7 +87,7 @@ export const Bespoke: React.FC = () => {
             {[1,2,3,4].map(i => (
               <div key={i} className="aspect-square overflow-hidden relative group">
                 <img 
-                  src={`https://picsum.photos/seed/client${i}/500/500`} 
+                  src={`/images/Pervoi${i}.JPG`} 
                   alt="Cliente felice" 
                   className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500"
                 />

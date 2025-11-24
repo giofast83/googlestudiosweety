@@ -88,8 +88,8 @@ export const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="relative order-2 lg:order-1">
             <div className="grid grid-cols-2 gap-4">
-              <img src="https://picsum.photos/seed/tailor1/400/500" alt="Dettaglio sartoriale" className="w-full h-auto object-cover translate-y-8" />
-              <img src="https://picsum.photos/seed/tailor2/400/500" alt="Atelier" className="w-full h-auto object-cover -translate-y-8" />
+              <img src="/images/Veronica&Eleonora.jpeg" alt="Dettaglio sartoriale" className="w-full h-auto object-cover translate-y-8" />
+              <img src="/images/DisegnoSposa.JPG" alt="Atelier" className="w-full h-auto object-cover -translate-y-8" />
             </div>
           </div>
           <div className="order-1 lg:order-2">
