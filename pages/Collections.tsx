@@ -30,7 +30,7 @@ export const Collections: React.FC = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="grid grid-cols-3 gap-2">
+              <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 gap-2">
                 {collection.gallery.map((img, idx) => (
                   <div 
                     key={idx} 

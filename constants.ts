@@ -22,7 +22,8 @@ export const COLLECTIONS: CollectionItem[] = [
     gallery: [
       "/images/Collezione%20Africa/Collezione_Africa_2.webp",
       "/images/Collezione%20Africa/Collezione_Africa_3.webp",
-      "/images/Collezione%20Africa/Collezione_Africa_4.webp"
+      "/images/Collezione%20Africa/Collezione_Africa_5.webp",
+      "/images/Collezione%20Africa/Collezione_Africa_6.webp"
     ],
     tags: ["Capsule", "Africa", "Stampe"]
   },

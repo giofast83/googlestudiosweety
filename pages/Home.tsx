@@ -14,8 +14,7 @@ export const Home: React.FC = () => {
             alt="Abito sartoriale Sweety Lab" 
             className="w-full h-full object-cover object-[100%_2%]"
           />
-          {/* Increased overlay opacity for better text contrast */}
-          <div className="absolute inset-0 bg-black/40"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/30 md:from-black/50 md:via-black/40 md:to-black/20"></div>
         </div>
         
         <div className="relative z-10 text-center max-w-4xl px-6 text-white pb-24 md:pb-32 pt-24 md:pt-32">
