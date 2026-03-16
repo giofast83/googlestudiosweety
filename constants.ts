@@ -13,6 +13,20 @@ export const NAV_LINKS: NavItem[] = [
 
 export const COLLECTIONS: CollectionItem[] = [
   {
+    id: "c_africa",
+    title: "Collezione Africa",
+    season: "Capsule 2024",
+    description: "Una capsule ispirata ai colori, alle texture e alla luce dell'Africa. Linee essenziali, tagli netti e dettagli artigianali per capi dal forte carattere.",
+    details: "Cotone e lino naturali, stampe artigianali, finiture sartoriali.",
+    image: "/images/Collezione%20Africa/Collezione_Africa_1.webp",
+    gallery: [
+      "/images/Collezione%20Africa/Collezione_Africa_2.webp",
+      "/images/Collezione%20Africa/Collezione_Africa_3.webp",
+      "/images/Collezione%20Africa/Collezione_Africa_4.webp"
+    ],
+    tags: ["Capsule", "Africa", "Stampe"]
+  },
+  {
     id: "c1",
     title: "Ethereal Bloom",
     season: "Primavera/Estate 2024",

@@ -126,7 +126,9 @@ export const Home: React.FC = () => {
               <Link to="/collezioni" key={i} className="group cursor-pointer">
                 <div className="overflow-hidden mb-4 h-[500px] relative">
                   <img 
-                    src={`https://picsum.photos/seed/fashion${i}/600/800`} 
+                    src={i === 1 ? 
+                      "/images/Collezione%20Africa/Collezione_Africa_1.webp" : 
+                      `https://picsum.photos/seed/fashion${i}/600/800`}
                     alt="Collezione" 
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
@@ -134,7 +136,7 @@ export const Home: React.FC = () => {
                     <span className="text-white uppercase tracking-widest text-sm border border-white px-4 py-2">Esplora</span>
                   </div>
                 </div>
-                <h3 className="font-serif text-2xl group-hover:text-brand-gold transition-colors">Collezione 0{i}</h3>
+                <h3 className="font-serif text-2xl group-hover:text-brand-gold transition-colors">{i === 1 ? "Collezione Africa" : `Collezione 0${i}`}</h3>
                 <p className="text-sm text-gray-500 uppercase tracking-wide mt-1">Stagione {2023 + i}</p>
               </Link>
             ))}
