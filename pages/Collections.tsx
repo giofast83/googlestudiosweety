@@ -6,41 +6,56 @@ import { X } from 'lucide-react';
 
 export const Collections: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [activeId, setActiveId] = useState<string>(COLLECTIONS[0]?.id);
+  const toJpg = (p: string) => p.replace(/\.(webp|png|jpeg|jpg)$/i, '.jpg');
+  const toWebp = (p: string) => p.replace(/\.(webp|png|jpeg|jpg)$/i, '.webp');
+  const tileClasses = [
+    'aspect-[3/4]',
+    'aspect-square',
+    'aspect-[16/10]',
+    'aspect-[4/5]',
+    'aspect-[16/9]'
+  ];
 
   return (
     <div className="fade-in pt-10">
-      <div className="bg-brand-cream px-6 text-center pt-28 md:pt-32 pb-20">
+      <div className="bg-brand-cream px-6 text-center pt-28 md:pt-32 pb-10">
         <h4 className="text-brand-gold uppercase tracking-widest text-xs font-bold mb-4">Lasciati Ispirare</h4>
         <h1 className="font-serif text-5xl md:text-6xl text-brand-dark mb-8">Le Collezioni</h1>
         <p className="text-gray-600 max-w-2xl mx-auto font-light">
           Un viaggio attraverso tessuti pregiati, tagli innovativi e ispirazioni stagionali. Ogni collezione racconta una nuova storia di femminilità.
         </p>
+        <div className="mt-10 flex flex-wrap justify-center gap-3">
+          {COLLECTIONS.map((c) => (
+            <button
+              key={c.id}
+              onClick={() => setActiveId(c.id)}
+              className={`px-4 py-2 border uppercase tracking-widest text-xs font-bold rounded-sm transition-colors ${
+                activeId === c.id
+                  ? 'bg-brand-gold text-white border-brand-gold'
+                  : 'text-brand-dark border-gray-300 hover:border-brand-gold hover:text-brand-gold'
+              }`}
+            >
+              {c.title}
+            </button>
+          ))}
+        </div>
       </div>
 
       <div className="max-w-7xl mx-auto px-6 py-12">
-        {COLLECTIONS.map((collection, index) => (
-          <article key={collection.id} className={`mb-32 flex flex-col ${index % 2 === 1 ? 'md:flex-row-reverse' : 'md:flex-row'} gap-12 items-start`}>
+        {COLLECTIONS.filter((c) => c.id === activeId).map((collection, index) => (
+          <article key={collection.id} className={`mb-16 flex flex-col ${index % 2 === 1 ? 'md:flex-row-reverse' : 'md:flex-row'} gap-12 items-start`}>
             
             {/* Visual Side */}
             <div className="w-full md:w-1/2 md:sticky md:top-24">
               <div className="relative aspect-[3/4] overflow-hidden mb-4">
                 <img 
-                  src={collection.image} 
+                  src={toJpg(collection.image)} 
                   alt={collection.title} 
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 gap-2">
-                {collection.gallery.map((img, idx) => (
-                  <div 
-                    key={idx} 
-                    className="aspect-[3/4] overflow-hidden cursor-zoom-in"
-                    onClick={() => setSelectedImage(img)}
-                  >
-                    <img src={img} alt="Detail" className="w-full h-full object-cover hover:opacity-80 transition-opacity" />
-                  </div>
-                ))}
-              </div>
+              
             </div>
 
             {/* Narrative Side */}
@@ -79,6 +94,26 @@ export const Collections: React.FC = () => {
           </article>
         ))}
       </div>
+
+      {/* Full-width Masonry Gallery for selected collection */}
+      {COLLECTIONS.filter((c) => c.id === activeId).map((collection) => (
+        <section key={`${collection.id}-masonry`} className="py-6">
+          <div className="px-2 sm:px-4">
+            <div className="max-w-[1024px] mx-auto columns-2 lg:columns-3 gap-3 [column-fill:balance]">
+              {collection.gallery.map((img, idx) => (
+                <div key={idx} className={`mb-3 break-inside-avoid ${tileClasses[idx % tileClasses.length]}`}>
+                  <img
+                    src={toJpg(img)}
+                    alt={`${collection.title} ${idx + 1}`}
+                    className="w-full h-full object-cover rounded-sm hover:opacity-90 transition"
+                    onClick={() => setSelectedImage(img)}
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      ))}
 
       {/* Lightbox Modal */}
       {selectedImage && (

@@ -1,4 +1,5 @@
 import React from 'react';
+import { COLLECTIONS } from '../constants';
 import { Link } from 'react-router-dom';
 import { Button } from '../components/Button';
 import { ArrowRight, Scissors, Leaf, Heart } from 'lucide-react';
@@ -126,7 +127,7 @@ export const Home: React.FC = () => {
                 <div className="overflow-hidden mb-4 h-[500px] relative">
                   <img 
                     src={i === 1 ? 
-                      "/images/Collezione%20Africa/Collezione_Africa_1.webp" : 
+                      (COLLECTIONS.find(c => c.id === 'c_africa')?.image ?? "/images/Collezione%20Africa/Africa_BlackRed_Lunga_Ele.jpg") : 
                       `https://picsum.photos/seed/fashion${i}/600/800`}
                     alt="Collezione" 
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"

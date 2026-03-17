@@ -18,12 +18,12 @@ export const COLLECTIONS: CollectionItem[] = [
     season: "Capsule 2024",
     description: "Una capsule ispirata ai colori, alle texture e alla luce dell'Africa. Linee essenziali, tagli netti e dettagli artigianali per capi dal forte carattere.",
     details: "Cotone e lino naturali, stampe artigianali, finiture sartoriali.",
-    image: "/images/Collezione%20Africa/Collezione_Africa_1.webp",
+    image: "/images/Collezione%20Africa/Africa_BlackRed_Lunga_Ele.jpg",
     gallery: [
-      "/images/Collezione%20Africa/Collezione_Africa_2.webp",
-      "/images/Collezione%20Africa/Collezione_Africa_3.webp",
-      "/images/Collezione%20Africa/Collezione_Africa_5.webp",
-      "/images/Collezione%20Africa/Collezione_Africa_6.webp"
+      "/images/Collezione%20Africa/Africa_BlackRed_Lunga_Back_Ele.jpg",
+      "/images/Collezione%20Africa/Africa_Green_Lunga_Ele.jpg",
+      "/images/Collezione%20Africa/Africa_Red_Fantasy_short_Ele.jpg",
+      "/images/Collezione%20Africa/Africa_Rosa_Ele.jpg"
     ],
     tags: ["Capsule", "Africa", "Stampe"]
   },
