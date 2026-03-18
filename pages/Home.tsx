@@ -125,13 +125,19 @@ export const Home: React.FC = () => {
             {[1, 2, 3].map((i) => (
               <Link to="/collezioni" key={i} className="group cursor-pointer">
                 <div className="overflow-hidden mb-4 h-[500px] relative">
-                  <img 
-                    src={i === 1 ? 
-                      (COLLECTIONS.find(c => c.id === 'c_africa')?.image ?? "/images/Collezione%20Africa/Africa_BlackRed_Lunga_Ele.jpg") : 
-                      `https://picsum.photos/seed/fashion${i}/600/800`}
-                    alt="Collezione" 
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
+                  <div className="w-full h-full transition-transform duration-700 group-hover:scale-105">
+                    <img 
+                      src={i === 1 ? 
+                        (COLLECTIONS.find(c => c.id === 'c_africa')?.image ?? "/images/Collezione%20Africa/Africa_03.jpg") : 
+                        i === 2 ?
+                        "/images/Collezione%20Africa/Africa_11.jpg" :
+                        i === 3 ?
+                        "/images/Collezione%20Africa/Africa_13.jpg" :
+                        `https://picsum.photos/seed/fashion${i}/600/800`}
+                      alt="Collezione" 
+                      className={`w-full h-full object-cover ${i === 3 ? "-scale-x-100" : ""}`}
+                    />
+                  </div>
                   <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                     <span className="text-white uppercase tracking-widest text-sm border border-white px-4 py-2">Esplora</span>
                   </div>

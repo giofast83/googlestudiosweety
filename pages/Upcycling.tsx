@@ -133,11 +133,11 @@ export const Upcycling: React.FC = () => {
              <div className="lg:col-span-7 order-1 lg:order-2 grid grid-cols-2 gap-4">
                 <div className="relative">
                   <span className="absolute top-2 left-2 bg-black/70 text-white text-[10px] uppercase font-bold px-2 py-1">Prima</span>
-                  <img src="https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg?_gl=1*o1ha40*_ga*MTEwNjM0MDcxOC4xNzYxOTIxNTc2*_ga_8JE65Q40S6*czE3NjM3NDEyMjkkbzUkZzEkdDE3NjM3NDE2MTEkajU5JGwwJGgw" className="w-full h-full object-cover grayscale opacity-70" alt="Giacca Uomo Prima" />
+                  <img src="/images/upcycling/trasformazione_01_prima.jpg" className="w-full h-full object-cover grayscale opacity-70" alt="Giacca Uomo Prima" />
                 </div>
                 <div className="relative">
                   <span className="absolute top-2 left-2 bg-brand-gold text-brand-dark text-[10px] uppercase font-bold px-2 py-1">Dopo</span>
-                  <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=600&auto=format&fit=crop" className="w-full h-full object-cover" alt="Gilet Donna Dopo" />
+                  <img src="/images/upcycling/trasformazione_01_dopo.jpg" className="w-full h-full object-cover" alt="Gilet Donna Dopo" />
                 </div>
              </div>
           </div>
