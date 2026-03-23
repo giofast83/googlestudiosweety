@@ -18,16 +18,11 @@ export const COLLECTIONS: CollectionItem[] = [
     season: "Capsule 2024",
     description: "Una capsule ispirata ai colori, alle texture e alla luce dell'Africa. Linee essenziali, tagli netti e dettagli artigianali per capi dal forte carattere.",
     details: "Cotone e lino naturali, stampe artigianali, finiture sartoriali.",
-    image: "/images/Collezione%20Africa/Africa_03.jpg",
+    image: "/images/Collezione%20Africa/Africa_09.jpg",
     gallery: [
       "/images/Collezione%20Africa/Africa_03.jpg",
-      "/images/Collezione%20Africa/Africa_04.jpg",
       "/images/Collezione%20Africa/Africa_08.jpg",
-      "/images/Collezione%20Africa/Africa_09.jpg",
-      "/images/Collezione%20Africa/Africa_10.jpg",
-      "/images/Collezione%20Africa/Africa_11.jpg",
-      "/images/Collezione%20Africa/Africa_12.jpg",
-      "/images/Collezione%20Africa/Africa_13.jpg"
+      "/images/Collezione%20Africa/Africa_09.jpg"
     ],
     tags: ["Capsule", "Africa", "Stampe"]
   },
@@ -50,17 +45,18 @@ export const COLLECTIONS: CollectionItem[] = [
   },
   {
     id: "c2",
-    title: "Urban Earth",
+    title: "Abbinamenti",
     season: "Autunno/Inverno 2023",
     description: "Tonalità calde della terra, superfici materiche e comfort avvolgente per la città d'inverno. La funzionalità incontra l'eleganza quotidiana.",
     details: "Lana cotta, Velluto millerighe, Cotone organico garzato, bottoni in corozo.",
-    image: "https://picsum.photos/seed/fashion2/800/1000",
+    image: "/images/Abbinamenti/Abbinamenti_04.jpg",
     gallery: [
-      "https://picsum.photos/seed/fashion2-1/600/800",
-      "https://picsum.photos/seed/fashion2-2/800/600",
-      "https://picsum.photos/seed/fashion2-3/700/1000",
-      "https://picsum.photos/seed/fashion2-4/500/700",
-      "https://picsum.photos/seed/fashion2-5/900/1100"
+      "/images/Abbinamenti/Abbinamenti_01.jpg",
+      "/images/Abbinamenti/Abbinamenti_02.jpg",
+      "/images/Abbinamenti/Abbinamenti_03.jpg",
+      "/images/Abbinamenti/Abbinamenti_04.jpg",
+      "/images/Abbinamenti/Abbinamenti_05.jpg",
+      "/images/Abbinamenti/Abbinamenti_06.jpg"
     ],
     tags: ["Stagionale", "Lana", "Daily"]
   },

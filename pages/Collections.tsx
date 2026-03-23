@@ -10,6 +10,7 @@ export const Collections: React.FC = () => {
   const [activeId, setActiveId] = useState<string>(COLLECTIONS[0]?.id);
   const galleryId = 'collections-gallery';
   const [heightSeed, setHeightSeed] = useState<number>(() => Math.random());
+  const [isMobile, setIsMobile] = useState(false);
   const scrollToGallery = () => {
     const el = document.getElementById(galleryId);
     if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -22,10 +23,18 @@ export const Collections: React.FC = () => {
   const filterRef = useRef<HTMLDivElement | null>(null);
   const seededVH = (idx: number) => {
     const x = Math.sin(idx * 997 + heightSeed * 1000 + 13) * 0.5 + 0.5; // 0..1 pseudo-random con seed
-    const min = 40; // vh
-    const max = 70; // vh cap richiesto
+    const min = isMobile ? 26 : 40; // vh
+    const max = isMobile ? 42 : 70; // vh cap richiesto
     return Math.min(max, Math.max(min, Math.round(min + x * (max - min))));
   };
+
+  useEffect(() => {
+    const mq = window.matchMedia('(max-width: 639px)');
+    const update = () => setIsMobile(mq.matches);
+    update();
+    mq.addEventListener('change', update);
+    return () => mq.removeEventListener('change', update);
+  }, []);
 
   useEffect(() => {
     setHeightSeed(Math.random());
@@ -136,9 +145,9 @@ export const Collections: React.FC = () => {
                 <span className="uppercase tracking-widest text-[11px] md:text-[12px] font-bold text-gray-400">{collection.gallery.length} SCATTI</span>
               </div>
             </div>
-            <div className="max-w-[1200px] mx-auto mt-8 columns-1 sm:columns-2 lg:columns-3 gap-x-6 [column-fill:balance]">
+            <div className="max-w-[1200px] mx-auto mt-6 sm:mt-8 columns-2 sm:columns-2 lg:columns-3 gap-x-3 sm:gap-x-6 [column-fill:balance]">
               {collection.gallery.map((img, idx) => (
-                <div key={idx} className="mb-6 break-inside-avoid break-inside-avoid-column inline-block w-full align-top">
+                <div key={idx} className="mb-3 sm:mb-6 break-inside-avoid break-inside-avoid-column inline-block w-full align-top">
                   <div className="relative overflow-hidden rounded-sm" style={{ height: `${seededVH(idx)}vh` }}>
                     <motion.img
                       src={toJpg(img)}

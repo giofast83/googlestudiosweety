@@ -87,7 +87,9 @@ export const Home: React.FC = () => {
       <section className="py-24 px-6 bg-white">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="relative order-2 lg:order-1">
-            <img src="/images/section_3_left.png" alt="Dettaglio sartoriale" className="w-full h-auto object-cover" />
+            <div className="w-full overflow-hidden">
+              <img src="/images/section_3_left.png" alt="Dettaglio sartoriale" className="block h-auto max-w-none w-[142.857%] ml-[-42.857%] object-cover" />
+            </div>
           </div>
           <div className="order-1 lg:order-2">
             <h4 className="text-brand-gold uppercase tracking-widest text-sm font-bold mb-4">Sweety Lab</h4>
@@ -127,9 +129,9 @@ export const Home: React.FC = () => {
                       src={i === 1 ? 
                         (COLLECTIONS.find(c => c.id === 'c_africa')?.image ?? "/images/Collezione%20Africa/Africa_03.jpg") : 
                         i === 2 ?
-                        "/images/Collezione%20Africa/Africa_11.jpg" :
+                        "/images/Abbinamenti/Abbinamenti_04.jpg" :
                         i === 3 ?
-                        "/images/Collezione%20Africa/Africa_13.jpg" :
+                        "/images/upcycling/trasformazione_01_dopo.jpg" :
                         `https://picsum.photos/seed/fashion${i}/600/800`}
                       alt="Collezione" 
                       className={`w-full h-full object-cover ${i === 3 ? "-scale-x-100" : ""}`}
@@ -139,7 +141,7 @@ export const Home: React.FC = () => {
                     <span className="text-white uppercase tracking-widest text-sm border border-white px-4 py-2">Esplora</span>
                   </div>
                 </div>
-                <h3 className="font-serif text-2xl group-hover:text-brand-gold transition-colors">{i === 1 ? "Collezione Africa" : `Collezione 0${i}`}</h3>
+                <h3 className="font-serif text-2xl group-hover:text-brand-gold transition-colors">{i === 1 ? "Collezione Africa" : i === 2 ? "Abbinamenti" : `Collezione 0${i}`}</h3>
                 <p className="text-sm text-gray-500 uppercase tracking-wide mt-1">Stagione {2023 + i}</p>
               </Link>
             ))}

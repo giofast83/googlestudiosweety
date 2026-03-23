@@ -17,6 +17,32 @@ export const Bespoke: React.FC = () => {
         </p>
       </section>
 
+      <section className="px-6 mb-16">
+        <div className="max-w-7xl mx-auto">
+          <div className="relative overflow-hidden rounded-sm">
+            <div className="relative h-[320px] sm:h-[420px] lg:h-[520px]">
+              <img src="/images/SuMisura/disegni.jpg" alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover object-[50%_62%]" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/25 to-transparent" />
+              <div className="absolute inset-0 flex items-end">
+                <div className="w-full p-6 sm:p-10">
+                  <div className="max-w-2xl">
+                    <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-white leading-tight">Dal bozzetto all’abito</h2>
+                    <p className="mt-4 text-white/85 text-sm sm:text-base leading-relaxed">
+                      Progettiamo insieme linee, volumi e dettagli: ogni capo nasce da un disegno pensato per valorizzare la tua silhouette.
+                    </p>
+                    <div className="mt-6">
+                      <Link to="/contatti">
+                        <Button variant="white">Prenota una consulenza</Button>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Process Steps */}
       <section className="bg-brand-cream py-24 px-6">
         <div className="max-w-7xl mx-auto">
