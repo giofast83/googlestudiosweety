@@ -35,13 +35,16 @@ export const COLLECTIONS: CollectionItem[] = [
     id: "c1",
     title: "Ethereal Bloom",
     season: "Primavera/Estate 2024",
-    description: "Una collezione ispirata alla rinascita della natura. Tessuti leggeri come organza e seta incontrano tagli strutturati.",
-    details: "Seta pura, Lino biologico, Organza riciclata.",
+    description: "Una collezione che celebra la rinascita della natura. Stratificazioni leggere, volumi eterei e trasparenze misurate disegnano silhouette ariose pensate per la luce dell'estate.",
+    details: "Seta pura lavata, Lino biologico, Organza riciclata, impunture a contrasto.",
     image: "https://picsum.photos/seed/fashion1/800/1000",
     gallery: [
       "https://picsum.photos/seed/fashion1-1/600/800",
-      "https://picsum.photos/seed/fashion1-2/600/800",
-      "https://picsum.photos/seed/fashion1-3/600/800"
+      "https://picsum.photos/seed/fashion1-2/700/900",
+      "https://picsum.photos/seed/fashion1-3/500/700",
+      "https://picsum.photos/seed/fashion1-4/800/900",
+      "https://picsum.photos/seed/fashion1-5/600/700",
+      "https://picsum.photos/seed/fashion1-6/900/1200"
     ],
     tags: ["Capsule", "Seta", "Cerimonia"]
   },
@@ -49,13 +52,15 @@ export const COLLECTIONS: CollectionItem[] = [
     id: "c2",
     title: "Urban Earth",
     season: "Autunno/Inverno 2023",
-    description: "Tonalità calde della terra e tessuti avvolgenti per la donna contemporanea che cerca comfort ed eleganza.",
-    details: "Lana cotta, Velluto, Cotone organico.",
+    description: "Tonalità calde della terra, superfici materiche e comfort avvolgente per la città d'inverno. La funzionalità incontra l'eleganza quotidiana.",
+    details: "Lana cotta, Velluto millerighe, Cotone organico garzato, bottoni in corozo.",
     image: "https://picsum.photos/seed/fashion2/800/1000",
     gallery: [
       "https://picsum.photos/seed/fashion2-1/600/800",
-      "https://picsum.photos/seed/fashion2-2/600/800",
-      "https://picsum.photos/seed/fashion2-3/600/800"
+      "https://picsum.photos/seed/fashion2-2/800/600",
+      "https://picsum.photos/seed/fashion2-3/700/1000",
+      "https://picsum.photos/seed/fashion2-4/500/700",
+      "https://picsum.photos/seed/fashion2-5/900/1100"
     ],
     tags: ["Stagionale", "Lana", "Daily"]
   },
@@ -63,13 +68,15 @@ export const COLLECTIONS: CollectionItem[] = [
     id: "c3",
     title: "Re-Made Stories",
     season: "Edizione Limitata - Upcycling",
-    description: "Pezzi unici creati recuperando tessuti vintage di alta qualità. Ogni capo racconta una storia diversa.",
-    details: "Denim vintage, Pizzi antichi, Scarti sartoriali.",
+    description: "Pezzi unici nati dal recupero di tessuti vintage e giacenze nobili. Ogni creazione è irripetibile e porta con sé una memoria.",
+    details: "Denim vintage, Pizzi antichi, Scarti sartoriali, rammendi visibili.",
     image: "https://picsum.photos/seed/fashion3/800/1000",
     gallery: [
       "https://picsum.photos/seed/fashion3-1/600/800",
-      "https://picsum.photos/seed/fashion3-2/600/800",
-      "https://picsum.photos/seed/fashion3-3/600/800"
+      "https://picsum.photos/seed/fashion3-2/700/900",
+      "https://picsum.photos/seed/fashion3-3/800/700",
+      "https://picsum.photos/seed/fashion3-4/500/700",
+      "https://picsum.photos/seed/fashion3-5/900/1200"
     ],
     tags: ["Upcycling", "Pezzo Unico", "Sostenibile"]
   }

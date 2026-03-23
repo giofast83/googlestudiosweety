@@ -87,10 +87,7 @@ export const Home: React.FC = () => {
       <section className="py-24 px-6 bg-white">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="relative order-2 lg:order-1">
-            <div className="grid grid-cols-2 gap-4">
-              <img src="/images/Veronica&Eleonora.jpeg" alt="Dettaglio sartoriale" className="w-full h-auto object-cover translate-y-8" />
-              <img src="/images/DisegnoSposa.JPG" alt="Atelier" className="w-full h-auto object-cover -translate-y-8" />
-            </div>
+            <img src="/images/section_3_left.png" alt="Dettaglio sartoriale" className="w-full h-auto object-cover" />
           </div>
           <div className="order-1 lg:order-2">
             <h4 className="text-brand-gold uppercase tracking-widest text-sm font-bold mb-4">Sweety Lab</h4>
